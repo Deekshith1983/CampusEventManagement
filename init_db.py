@@ -8,11 +8,22 @@ c.execute('''CREATE TABLE IF NOT EXISTS users (
 	id INTEGER PRIMARY KEY AUTOINCREMENT,
 	name TEXT NOT NULL,
 	registration_number TEXT UNIQUE NOT NULL,
+	email TEXT,
 	role TEXT CHECK(role IN ('club_admin', 'student')) NOT NULL,
 	mobile TEXT NOT NULL,
 	password TEXT NOT NULL,
 	club_name TEXT,
 	college_name TEXT
+)''')
+
+# Password reset tokens table
+c.execute('''CREATE TABLE IF NOT EXISTS password_reset_tokens (
+	id INTEGER PRIMARY KEY AUTOINCREMENT,
+	user_id INTEGER NOT NULL,
+	token TEXT NOT NULL,
+	expires_at TEXT NOT NULL,
+	used INTEGER DEFAULT 0,
+	FOREIGN KEY(user_id) REFERENCES users(id)
 )''')
 
 # Events table

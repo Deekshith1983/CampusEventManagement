@@ -1,0 +1,102 @@
+.event-list {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.event-list h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.event-item {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-date {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.event-desc {
+    color: #555;
+}
+
+.event-venue {
+    color: #888;
+}
+
+.event-org {
+    color: #16a085;
+}
+
+.event-actions button {
+    margin-left: 0.5rem;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.event-actions button:first-child {
+    background: #3498db;
+}
+
+.event-actions button:hover {
+    opacity: 0.85;
+}
+
+.event-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.event-form h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.event-form input,
+.event-form textarea,
+.event-form select {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.event-form button {
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.event-form button[type="button"] {
+    background: #e67e22;
+}
+
+.event-form button:hover {
+    opacity: 0.85;
+}
